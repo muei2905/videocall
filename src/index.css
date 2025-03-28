@@ -1,0 +1,135 @@
+/* Background gradient animation */
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.aaa{
+  display: block;
+}
+
+/* App container */
+.app-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+/* Background effect */
+.background {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;  /* 🔥 Đảm bảo bao phủ toàn bộ chiều rộng */
+  height: 100vh; /* 🔥 Đảm bảo bao phủ toàn bộ chiều cao */
+  background: linear-gradient(45deg, #ff007f, #3a003a, #1a1a2e, #ff00ff);
+  background-size: 300% 300%;
+  animation: bgAnimation 6s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+/* Main content box */
+.content {
+  background: rgba(221, 210, 210, 0.8);
+  border: 2px solid #ff007f;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(255, 0, 127, 0.4);
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+  margin-top: -600px;
+  color: white;
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff007f;
+}
+
+/* User info */
+.user-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-info span {
+  font-weight: bold;
+  color: #ff99cc;
+}
+
+/* Buttons */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button i {
+  font-size: 20px;
+}
+
+/* Google button */
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+/* GitHub button */
+.github-btn {
+  background-color: #333;
+  color: white;
+}
+
+.github-btn:hover {
+  background-color: #222;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ff4757;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #e04040;
+}
+
+/* Spacing */
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.group-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff007f;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
