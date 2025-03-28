@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.7.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "firebase": "^11.5.0",
     "livekit-client": "^2.9.9",
     "livekit-server-sdk": "^2.10.2",
     "react": "^19.0.0",
